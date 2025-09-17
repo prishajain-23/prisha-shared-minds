@@ -224,7 +224,7 @@ export async function transcribeBlob(blob, options = {}) {
 export async function distortText(text, style = "poetic, glitchy, dreamlike but coherent", options = {}) {
   const { model = "openai/o4-mini", inputKey = "prompt" } = options;
 
-  const prompt = `Distort the following text in the STYLE.\nSTYLE: ${style}\nTEXT:\n${text}`;
+  const prompt = `like someone who has never been to earth before, also evil`;
 
   const payload = {
     model,
