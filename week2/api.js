@@ -222,7 +222,7 @@ export async function transcribeBlob(blob, options = {}) {
 // Distort text with an instruction-tuned LLM.
 // options: { model?: string, inputKey?: string }
 export async function distortText(text, style = "hostile, mean-spirited, mocking, cruel, like it comes from a bad person", options = {}) {
-  const { model = "openai/o4-mini", inputKey = "prompt" } = options;
+  const { model = "openai/gpt-5", inputKey = "prompt" } = options;
 
   const prompt = (
     `You are a distortion engine. Rewrite the TEXT so it comes across as if spoken by a *bad person*—` +
