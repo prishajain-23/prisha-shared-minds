@@ -221,10 +221,16 @@ export async function transcribeBlob(blob, options = {}) {
 
 // Distort text with an instruction-tuned LLM.
 // options: { model?: string, inputKey?: string }
-export async function distortText(text, style = "poetic, glitchy, dreamlike but coherent", options = {}) {
+export async function distortText(text, style = "nonsensical, strange, slightly evil, surreal, glitchy, unsettling but readable", options = {}) {
   const { model = "openai/o4-mini", inputKey = "prompt" } = options;
 
-  const prompt = `like someone who has never been to earth before, also evil`;
+  const prompt = (
+    `You are a distortion engine. Rewrite the TEXT so it feels *nonsensical*, *strange*, and just a *little* evil—` +
+    `surreal, glitchy, and uncanny—yet still readable. Preserve some phonetic echoes and key nouns, but fracture syntax, ` +
+    `bend meaning, and lace it with unsettling undertones. Avoid explicit threats, gore, or slurs. Output only the rewritten text.\n` +
+    `\nSTYLE: ${style}` +
+    `\nTEXT:\n${text}`
+  );
 
   const payload = {
     model,
