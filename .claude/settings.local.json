@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/prishajain/Desktop/GitHub/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

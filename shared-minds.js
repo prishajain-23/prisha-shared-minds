@@ -8,6 +8,7 @@
     // Add more weeks like:
     { label: 'Week 2', href: 'week2/index.html', size: 90, bg: '#222', color: '#fff', speed: 2.2 },
     { label: 'Week 3', href: 'week3/index.html', size: 95, bg: '#333', color: '#fff', speed: 1.8 },
+    { label: 'Week 4', href: 'week4/index.html', size: 110, bg: '#444', color: '#fff', speed: 2.5 },
   ];
 
   const circles = [];
